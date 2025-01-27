@@ -16,7 +16,7 @@
 
 header{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     padding:5px;
     margin-bottom:5px;
     font-size:large;

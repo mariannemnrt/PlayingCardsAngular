@@ -331,6 +331,8 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<app-playing-cards></app-playing-cards>
+<div id="card-list">
+<app-playing-cards [monster]="monster1"/>
+<app-playing-cards/>
+</div>
 <router-outlet />
