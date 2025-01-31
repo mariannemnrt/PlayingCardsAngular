@@ -332,7 +332,9 @@
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div id="card-list">
-<app-playing-cards [monster]="monster1"/>
-<app-playing-cards/>
+<app-search-bar (searchButtonclicked)="increaseCount()"></app-search-bar>
+clickcount: {{count}}
+
+
 </div>
 <router-outlet />
