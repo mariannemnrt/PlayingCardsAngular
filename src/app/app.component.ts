@@ -12,6 +12,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 })
 export class AppComponent {
   title = 'PlayingCardsAngular';
+  search='';
 
 monster1!:Monster;
 count: number =0;

@@ -331,10 +331,17 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<div id="card-list">
-<app-search-bar (searchButtonclicked)="increaseCount()"></app-search-bar>
+
+<app-search-bar
+(searchButtonclicked)="increaseCount()" 
+[search]="search"
+(searchChange)= "search = $event"></app-search-bar>
+<br>
+
+search : {{search}}
+<br>
 clickcount: {{count}}
 
 
-</div>
+
 <router-outlet />
